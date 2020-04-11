@@ -7,8 +7,8 @@ const input = document.getElementById("input");
 
 //class name declarations
 
-const check = "fas fa-check-circle";
-const uncheck = "far fa-circle";
+const check = "fa-check-circle";
+const uncheck = "fa-circle";
 const linethrough = "lineThrough";
 
 // show the date in the header
@@ -58,7 +58,7 @@ function addToDo(toDo, id, done, trash) {
   const line = done ? linethrough : "";
   const item = `
         <li class="item">
-            <i class="${completed} co" job="complete" id="${id}"></i>
+            <i class="fa ${completed} co" job="complete" id="${id}"></i>
             <p class="text ${line}">${toDo}</p>
             <i class="fas fa-trash-alt de" job="delete" id="${id}"></i>           
         </li>
